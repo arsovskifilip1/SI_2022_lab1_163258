@@ -1,0 +1,250 @@
+****NOTE**** Od na sestra mi laptopot ja pravev vezbava.
+
+Bojana@DESKTOP-KMME82G MINGW64 ~
+$ cd Desktop
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop
+$ git clone https://github.com/arsovskifilip1/SI_2022_lab1_163258
+Cloning into 'SI_2022_lab1_163258'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop
+$ cd SI_2022_lab1_163258
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        shopping_list.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git commit -m "add 5 items to the shopping list"
+[master 74307cf] add 5 items to the shopping list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git commit -m "add quantitites to the items"
+[master a0dbe6f] add quantitites to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$
+
+
+
+del 2
+
+
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 666 bytes | 333.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/arsovskifilip1/SI_2022_lab1_163258
+   0ce744e..a0dbe6f  master -> master
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git status
+On branch branch2
+nothing to commit, working tree clean
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git status
+On branch branch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git commit -m"change quantity of item #5"
+[branch1 3a9653b] change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git commit -m"change quantity of item #2"
+[master 22d9ae9] change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/arsovskifilip1/SI_2022_lab1_163258
+   a0dbe6f..22d9ae9  master -> master
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git status
+On branch branch1
+nothing to commit, working tree clean
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch1)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git status
+On branch branch2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git status
+On branch branch2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   shopping_list.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git commit -m"Modify item #4"
+[branch2 d8aab4d] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+3
+
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git status
+On branch branch2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   shopping_list.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git add shopping_list.txt
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git commit-m "Modify item #4 and add item #6"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Bojana@DESKTOP-KMME82G MINGW64 ~/Desktop/SI_2022_lab1_163258 (branch2)
+$ git commit -m"Modify item #4 and add item #6"
+[branch2 e291769] Modify item #4 and add item #6
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
